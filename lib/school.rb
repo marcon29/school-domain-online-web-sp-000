@@ -19,7 +19,10 @@ class School
   end
 
   def sort
-    @roster.collect { |grade, student_list| student_list.sort }
+    sorted_roster = {}
+    @roster.each do |grade, student_list|
+      sorted_roster[grade] = student_list.sort
+    end
   end
 
 end
