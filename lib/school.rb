@@ -23,6 +23,7 @@ class School
     @roster.each do |grade, student_list|
       sorted_roster[grade] = student_list.sort
     end
+    sorted_roster
   end
 
 end
